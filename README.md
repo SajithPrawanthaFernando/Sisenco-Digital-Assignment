@@ -61,27 +61,6 @@ The Expense Tracker API is a robust backend system for managing personal finance
 - **Mark as Read**: `PUT /notifications/mark-read/{notificationId}`
 - **Delete Notification**: `DELETE /notifications/deletenotification/{notificationId}`
 
-### **User Dashboard**
-
-- **User Financial Summary**: `GET /userdashboard/user`
-- **Savings Progress**: `GET /userdashboard/savings-progress`
-
-### **Admin Dashboard**
-
-- **Get Admin Dashboard**: `GET /admindashboard/admin`
-
-### **Admin Routes**
-
-- **Get All Users**: `GET /admin/users`
-- **Update User Role**: `PUT /admin/users/{userId}/role`
-- **Delete User**: `DELETE /admin/users/{userId}`
-- **Get All Transactions**: `GET /admin/transactions`
-- **Filter Transactions by User and Date**: `GET /admin/transactions?userId={userId}&dateFrom=YYYY-MM-DD&dateTo=YYYY-MM-DD`
-- **Get All Budgets**: `GET /admin/budgets`
-- **Filter Budgets by Month**: `GET /admin/budgets?month=YYYY-MM`
-- **Get All Goals**: `GET /admin/goals`
-- **Filter Goals by Completion Status**: `GET /admin/goals?isCompleted=true`
-
 ### **System Settings**
 
 - **Get Categories**: `GET /settings/categories`
@@ -98,16 +77,6 @@ The Expense Tracker API is a robust backend system for managing personal finance
 - **Income vs Expense Summary**: `GET /summary/income-vs-expense?startDate=YYYY-MM-DD&endDate=YYYY-MM-DD`
 - **Budget Summary**: `GET /summary/budget-summary?startDate=YYYY-MM-DD&endDate=YYYY-MM-DD`
 - **Goal Summary**: `GET /summary/goal-summary`
-
-- **Admin Dashboard**: `GET /admindashboard/admin`
-- **Export Reports (CSV/PDF)**:
-  - `GET /adminreports/export-dashboard/csv`
-  - `GET /adminreports/export-dashboard/pdf`
-  - `GET /userreports/export-goals/pdf`
-
-### **Admin Reports**
-
-- **Export Admin Dashboard Reports (CSV & PDF)**: `GET /adminreports/export-dashboard/pdf`
 
 ## Real-Time Features
 
@@ -135,8 +104,8 @@ The Expense Tracker API is a robust backend system for managing personal finance
 ### Steps to Run
 
 1. Clone the repository:<br/>
-   `git clone https://github.com/SE1020-IT2070-OOP-DSA-25/project-IT22152428.git` <br/>
-   ` cd expense-tracker-api`
+   `git clone https://github.com/SajithPrawanthaFernando/Sisenco-Digital-Assignment.git` <br/>
+   ` cd server`
 
 2. Install dependencies:
    `npm install`
@@ -147,16 +116,6 @@ The Expense Tracker API is a robust backend system for managing personal finance
 
 4. Start the server:
    ` npm start`
-
-## Running Tests
-
-- **Unit Tests**: `npm test`
-- **Integration Tests**: `npm run test:integration`
-- **Load Testing** (Artillery): `artillery run loadtest.yml`
-
-## Postman API Collection
-
-To test API endpoints, import the provided **Postman Collection**.
 
 ## Contributing
 
